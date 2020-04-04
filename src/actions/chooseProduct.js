@@ -32,3 +32,14 @@ export const checkStatus = value => async dispatch => {
     console.log(err);
   }
 }
+
+export const shutDown = value => async dispatch => {
+  try {
+    dispatch ({
+      type: types.RESET_STATE,
+      payload: value
+    })
+  }catch (err) {
+    console.log(err);
+  }
+}

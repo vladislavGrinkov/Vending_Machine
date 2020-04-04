@@ -13,6 +13,7 @@ export const market = [
   {id: 9, label: 'Cola', type: 'Cold Drink', price: '199 R'},
   {id: 10, label: 'Cola', type: 'Cold Drink', price: '200 R'},
   {id: 11, label: 'Cola', type: 'Cold Drink', price: '600 R'},
+  {id: 12, label: 'Cola', type: 'Cold Drink', price: '100 R'},
 ] 
 
 class Cards extends React.Component {

@@ -3,3 +3,4 @@ export const FAILED_MONEY = 'FAILED_MONEY';
 export const CHOOSE_PRODUCT = 'CHOOSE_PRODUCT';
 export const GET_PRODUCT = 'GET_PRODUCT';
 export const CHECK_STATUS = 'CHECK_STATUS';
+export const RESET_STATE = 'RESET_STATE';

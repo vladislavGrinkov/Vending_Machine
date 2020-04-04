@@ -3,6 +3,7 @@ import * as types from '../constants/actionTypes';
 export const initialState = {
   chooseProduct: [],
   status: '.',
+  selectItem: '.',
   finishOperation: null
 }
 
@@ -22,6 +23,13 @@ export const getChooseProduct = (state = initialState, action) => {
       return {
         ...state, 
         status: action.payload
+      }
+    case types.RESET_STATE: 
+      return {
+        ...state,
+        chooseProduct: [],
+        status: '.',
+        finishOperation: null
       }
     default: 
       return state;

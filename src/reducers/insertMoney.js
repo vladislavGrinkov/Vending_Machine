@@ -3,7 +3,8 @@ import * as types from '../constants/actionTypes';
 export const initialState = {
   blockForMoney: 'Insert banknotes...',
   failedBlock: 'Unknown banknote!',
-  changeLabel: 'Choose product...'
+  changeLabel: 'Choose product...',
+  defaultInput: '...'
 };
 
 export const insertMoney = (state = initialState, action) => {
@@ -13,6 +14,13 @@ export const insertMoney = (state = initialState, action) => {
         ...state, 
         blockForMoney: action.payload
       };
+    case types.RESET_STATE:
+      return {
+        ...state,
+        blockForMoney: 'Insert banknotes...',
+        failedBlock: 'Unknown banknote!',
+        changeLabel: 'Choose product...'
+      }
     default: 
       return state;      
   }
